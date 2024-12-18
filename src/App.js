@@ -28,11 +28,13 @@ const App= () => {
 
   return (
     <Container>
-      <Time time ={time}/>
+      <div className={styles.timer}>
+        <Time time ={time}/>
+      </div>
       <div className={styles.buttons}>
-        <button  onClick={() => start()}>Start</button>
-        <button  onClick={() => stop()}>Stop</button>
-        <button  onClick={() => reset()}>Reset</button>
+        <button className={styles.button} onClick={() => start()}>Start</button>
+        <button className={styles.button} onClick={() => stop()}>Stop</button>
+        <button className={styles.button} onClick={() => reset()}>Reset</button>
       </div>
       
     </Container>
